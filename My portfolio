@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kranthi | Python & Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    header {
+      padding: 2rem 0 1.5rem 0;
+      border-bottom: 1px solid #1f2937;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      color: #9ca3af;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      font-size: 0.9rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid #374151;
+    }
+
+    .hero {
+      padding: 2rem 0;
+      display: grid;
+      grid-template-columns: minmax(0, 2fr);
+      gap: 1.5rem;
+    }
+
+    .hero-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      color: #9ca3af;
+      margin-bottom: 1rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    .btn {
+      padding: 0.6rem 1rem;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .btn-primary {
+      background: #38bdf8;
+      color: #0f172a;
+      font-weight: 600;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #4b5563;
+      color: #e5e7eb;
+    }
+
+    section {
+      padding: 1.5rem 0;
+      border-top: 1px solid #1f2937;
+    }
+
+    section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-desc {
+      color: #9ca3af;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr);
+        align-items: center;
+      }
+      .grid-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .card {
+      border-radius: 0.75rem;
+      border: 1px solid #1f2937;
+      padding: 1rem;
+      background: #020617;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      background: #111827;
+      border: 1px solid #1f2937;
+      color: #9ca3af;
+    }
+
+    .project-title {
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .project-tech {
+      font-size: 0.8rem;
+      color: #9ca3af;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-list {
+      list-style: none;
+      display: grid;
+      gap: 0.35rem;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 0 0.5rem 0;
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Kranthi</h1>
+        <p>B.Tech CSE • Final Year (2026) • VBIT, Hyderabad</p>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div>
+          <h2 class="hero-title">Aspiring Python & Backend Web Developer</h2>
+          <p class="hero-subtitle">
+            Final-year B.Tech CSE student at VBIT, Hyderabad. I use Python and web development
+            skills to build clean, simple applications and I’m interested in backend and full-stack development.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects"><button class="btn btn-primary">View My Projects</button></a>
+            <a href="#contact"><button class="btn btn-outline">Contact Me</button></a>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="margin-bottom: 0.5rem;">Internship Objective</h3>
+          <p style="font-size: 0.9rem; color: #d1d5db;">
+            To secure an internship where I can use my skills in Python and web development (frontend and backend)
+            to contribute to real-time projects, learn industry best practices, and grow as a backend/full-stack developer.
+          </p>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p class="section-desc">
+          I am Kranthi, a final-year B.Tech Computer Science student at Vignana Bharathi Institute of Technology (VBIT), Hyderabad.
+        </p>
+        <p style="font-size: 0.95rem;">
+          I enjoy working with Python and web technologies to build simple, usable applications.
+          I am especially interested in backend development, understanding how things work behind the scenes,
+          and connecting the frontend with server-side logic. I am eager to learn from real-world projects and experienced developers.
+        </p>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <p class="section-desc">Technologies and concepts I am familiar with.</p>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>Programming</h3>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript (Basics)</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Web & Frontend</h3>
+            <div class="tag-list">
+              <span class="tag">Responsive Pages</span>
+              <span class="tag">Basic Forms</span>
+              <span class="tag">Simple UI Layouts</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Backend & Concepts</h3>
+            <div class="tag-list">
+              <span class="tag">Python Backend Logic</span>
+              <span class="tag">Client-Server Basics</span>
+              <span class="tag">OOP Basics</span>
+              <span class="tag">DS & Algo (Basics)</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Tools</h3>
+            <div class="tag-list">
+              <span class="tag">VS Code</span>
+              <span class="tag">Git & GitHub</span>
+              <span class="tag">Windows</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects (You can edit later) -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <p class="section-desc">
+          Add your real projects here when they are ready. For now, these are example descriptions you can modify.
+        </p>
+        <div class="grid grid-2">
+          <div class="card">
+            <div class="project-title">Personal Portfolio Website</div>
+            <div class="project-tech">HTML, CSS, Basic JavaScript</div>
+            <p style="font-size: 0.9rem;">
+              A clean, responsive website to showcase my skills, education, and contact details.
+              Focused on simple design and clear structure for recruiters.
+            </p>
+          </div>
+          <div class="card">
+            <div class="project-title">Python Mini Project</div>
+            <div class="project-tech">Python</div>
+            <p style="font-size: 0.9rem;">
+              A small Python script/app to automate simple tasks (like file operations or basic calculations),
+              improving my understanding of backend logic and scripting.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education">
+        <h2>Education</h2>
+        <div class="card">
+          <h3>Vignana Bharathi Institute of Technology (VBIT), Hyderabad</h3>
+          <p style="font-size: 0.95rem; color: #9ca3af;">
+            B.Tech in Computer Science and Engineering (CSE)<br />
+            Final Year • Year of Passing: 2026
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p class="section-desc">You can reach me for internship opportunities and collaborations.</p>
+        <div class="card">
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:kattakranthi088@gmail.com">kattakranthi088@gmail.com</a></li>
+            <li><strong>Phone:</strong> 6281930183</li>
+            <li><strong>Location:</strong> Hyderabad, India</li>
+            <li><strong>GitHub:</strong> 
+              <a href="https://github.com/your-github-username" target="_blank">
+                github.com/your-github-username
+              </a>
+            </li>
+            <li><strong>LinkedIn:</strong> 
+              <a href="https://linkedin.com/in/your-linkedin-id" target="_blank">
+                linkedin.com/in/your-linkedin-id
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Kranthi • Built with HTML, CSS & Python mindset
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
